@@ -80,7 +80,7 @@ body {
     font-family: Raleway;
 }
 .main_form .main_form2 .mc-field-group div input {
-    margin: 0px !IMPORTANT;
+    min-width: 91%;
 }
 .main_form .main_form2 .mc-field-group div span {
     background: #fff;
@@ -105,7 +105,7 @@ body {
     padding: 17px 20px;
 }
 .main_form {
-    width: 47%;
+    width: 50%;
 }
 .main_form .main_form2 .mc-field-group label {
     display: block;
@@ -129,9 +129,6 @@ body {
     padding: 0 0.4em;
     vertical-align: middle;
     width: 100%;
-}
-.main_form .main_form2 .mc-field-group div input {
-    margin: 0px !IMPORTANT;
 }
 .main_form .main_form2 .mc-field-group div span {
     background: #fff;
@@ -255,6 +252,7 @@ body {
     line-height: 100%;
     letter-spacing: normal;
     text-align: left;
+    margin: 0px !IMPORTANT;
 }
 .templateSection.templateFooter {
     position: relative;
@@ -324,10 +322,85 @@ padding: 0 9px; color: #686868; font-family: Raleway, sans-serif; font-size: 18p
 #success-message{
 	display: none;
 }
-
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    background: transparent !IMPORTANT;
+    font-weight: bold !IMPORTANT;
+    font-size: 19px !IMPORTANT;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #db3a1b !important;
+    margin-top: 5px !IMPORTANT;
+}
+#mc_embed_signup .mc-field-group div input#mce-SMSPHONE {
+    border-radius: 0px !important;
+}
+#mc_embed_signup .mc-field-group input {
+    padding: 0px 10px !IMPORTANT;
+    margin: 0px !IMPORTANT;
+}
+#mc_embed_signup .clear input:hover {
+    background-color: rgb(42, 42, 42);
+}
+#mc_embed_signup .clear input {
+    padding: 16px 18px;
+    background: #fff;
+    color: #2a2a2a;
+    line-height: normal;
+    height: auto;
+    font-size: 18px;
+    font-family: Raleway;
+    border-radius: 2px;
+}
+#mc_embed_signup .small-meta {
+    margin: 0px ! IMPORTANT;
+        font-size: 12px ! IMPORTANT;
+}
+#mc_embed_signup .mc-field-group label {
+    margin: 0px !IMPORTANT;
+}
+#mc_embed_signup .mc-field-group {
+    padding-bottom: 20px !IMPORTANT;
+}
+#mc_embed_signup form {
+    padding: 10px !IMPORTANT;
+    margin: 0px !IMPORTANT;
+}
+#mc_embed_signup .clear input:hover {
+    color: #fff;
+}
+.optional2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.optional2 span.field-help {
+    background: transparent !IMPORTANT;
+    letter-spacing: 0.01em;
+    color: #959595;
+    line-height: 1.38461538em;
+    font-size: 20px;
+    width: auto;
+    display: inline-block;
+    font-family: Raleway !IMPORTANT;
+    font-weight: 400 !IMPORTANT;
+    margin-right: -25px;
+}
+.mcnTextContent.banner-head h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Raleway;
+}
+.mcnTextContent.banner-head p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0px;
+}
+#mc_embed_signup .asterisk {
+    color: #ffffff !important;
+}
 
 /*  **********Responsive css start here*************  */
-
 
 @media(max-width: 600px ){
 	.headerContainer.contentContainer .mcnTextBlock {
@@ -337,14 +410,21 @@ padding: 0 9px; color: #686868; font-family: Raleway, sans-serif; font-size: 18p
     padding-left: 18px;
     padding-right: 18px;
 }
+
 }
 
 @media(max-width: 480px ){
 .banner-head h1 {
     font-size: 36px !important;
     line-height: 125% !important;
-    margin-top: 68px;
+    margin-top: 60px;
     margin-bottom: 80px;
+}
+.mcnTextContent.banner-head h3 {
+    font-size: 20px !IMPORTANT;
+}
+#mc_embed_signup form {
+    padding: 5px !IMPORTANT;
 }
 .main_form {
     width: 86%;
@@ -352,6 +432,7 @@ padding: 0 9px; color: #686868; font-family: Raleway, sans-serif; font-size: 18p
 }
 .mcnTextContent h3 {
     font-size: 24px !important;
+    line-height: 150% !important;
 }
 .Innovation-sec {
     flex-direction: column !important;
@@ -371,6 +452,7 @@ padding: 0 9px; color: #686868; font-family: Raleway, sans-serif; font-size: 18p
 .mcnTextContent h4 {
     font-size: 20px !important;
     line-height: 200% !important;
+    padding: 0 9px 0 9px;
 }
 .hed-Redefining h2 {
     font-size: 30px !important;
@@ -378,6 +460,8 @@ padding: 0 9px; color: #686868; font-family: Raleway, sans-serif; font-size: 18p
 }
 .craftsmanship .mcnCaptionColumn .mcnTextContent {
     margin-top: 20px;
+    padding-right: 18px !important;
+    padding-left: 18px !important;
 }
 .craftsmanship .mcnCaptionColumn .mcnTextContent ul li {
     font-size: 20px !important;
@@ -399,10 +483,20 @@ padding: 0 9px; color: #686868; font-family: Raleway, sans-serif; font-size: 18p
     font-size: 18px !important;
     line-height: 150% !important;
     margin-top: 0px !IMPORTANT;
-        margin-bottom: 12px !important;
+    margin-bottom: 20px !important;
 }
 .mcnImageBlock.mcnImageBlockInner .mcnImageContent {
     padding: 0px 20px;
 }
+.box-1 .mcnTextContent h4 br {
+    display: none;
+}
+.main_form .main_form2 .mc-field-group div input {
+    min-width: 85%;
+}
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    font-size: 17px !important;
+}
+
 
 }
