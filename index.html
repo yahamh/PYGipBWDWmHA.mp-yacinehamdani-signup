@@ -33,7 +33,7 @@
         
         <!-- Sign-Up Form -->
      <div id="mc_embed_shell">
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+      <link href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
         #mc_embed_signup}
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
@@ -65,7 +65,7 @@
 		        <div id="mce-responses" class="clear">
 		            <div class="response" id="mce-error-response" style="display: none;"></div>
 		            <div class="response" id="mce-success-response" style="display: none;"></div>
-		        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_a1d01c3568a7a75dcb3d3d58b_b0925a4e1e" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Join Now" >
+		        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_a1d01c3568a7a75dcb3d3d58b_b0925a4e1e" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe"  class="button" onclick="myFunction()" value="Join Now" >
 		        </div>
 		    </div>
 		</form>
@@ -75,9 +75,9 @@
         <!-- <p>We'll be in touch soon.</p> -->
     <!-- </div> -->
 
-	 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- <script type="text/javascript">
-    document.getElementById("mc-embedded-subscribe").onclick = function(event) {
+    document.getElementById("mc-embedded-subscribe").onclick = function() {
         // Prevent default action
         event.preventDefault();
 
@@ -97,14 +97,13 @@
             location.href = "/HTMl/successpage.html";
         }
     };
-</script> -->
-
-
 </script>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+ -->
+
+<script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[6]='SMSPHONE';ftypes[6]='smsphone';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[7]='UBPAGEID';ftypes[7]='text';fnames[8]='UBVARIANT';ftypes[8]='text';fnames[9]='UBDATE';ftypes[9]='date';}(jQuery));var $mcj = jQuery.noConflict(true); 
 $(document).ready(function() {
-        $("#mc-embedded-subscribe").click(function(event) {
+        $("#mc-embedded-subscribe").click(function() {
             event.preventDefault(); // Prevent default action
 
             // Trigger Mailchimp validation
@@ -129,7 +128,7 @@ $(document).ready(function() {
 
     </div>
 
-    </div>
+
    
 </div>
 
